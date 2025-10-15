@@ -26,6 +26,5 @@ Happy Hacking ╰(*°▽°*)╯
 
  made the level more vertically challenging  
 
-Demo video  
 
 
