@@ -1,10 +1,10 @@
 [gd_scene load_steps=2 format=3 uid="uid://drv0piiqc4mwe"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_qybvw"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qybvw"]
 
 [node name="slime_blockers" type="Area2D"]
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_qybvw")
+shape = SubResource("RectangleShape2D_qybvw")
 debug_color = Color(0.627451, 0.07058824, 0.4392157, 1)
