@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cmcw47ylgxccg" path="res://Assets/sprites/slime_green.png" id="2_n6pvg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pjw23"]
-size = Vector2(13, 13)
+size = Vector2(16, 12)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2npkn"]
 atlas = ExtResource("2_n6pvg")
@@ -47,9 +47,10 @@ animations = [{
 script = ExtResource("1_n6pvg")
 
 [node name="killzone" parent="." instance=ExtResource("1_p2gj0")]
+collision_layer = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone"]
-position = Vector2(0.5, 5.5)
+position = Vector2(0, 6)
 shape = SubResource("RectangleShape2D_pjw23")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -58,9 +59,11 @@ autoplay = "default"
 frame_progress = 0.0675186
 
 [node name="RayCast_right" type="RayCast2D" parent="."]
+visible = false
 position = Vector2(0, 6)
-target_position = Vector2(11, 0)
+target_position = Vector2(12, 0)
 
 [node name="RayCast_left" type="RayCast2D" parent="."]
+visible = false
 position = Vector2(0, 6)
-target_position = Vector2(-11, 0)
+target_position = Vector2(-13, 0)
